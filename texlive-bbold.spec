@@ -1,3 +1,9 @@
+# revision 17187
+# category Package
+# catalog-ctan /fonts/bbold
+# catalog-date 2010-02-15 23:28:51 +0100
+# catalog-license bsd
+# catalog-version 1.01
 Name:		texlive-bbold
 Version:	1.01
 Release:	1
@@ -76,6 +82,7 @@ for a feel for the font's appearance.
 %doc %{_texmfdistdir}/source/latex/bbold/bbold.dtx
 %doc %{_texmfdistdir}/source/latex/bbold/bbold.ins
 %doc %{_texmfdistdir}/source/latex/bbold/fonttabl.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -86,3 +93,5 @@ for a feel for the font's appearance.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
