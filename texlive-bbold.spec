@@ -6,7 +6,7 @@
 # catalog-version 1.01
 Name:		texlive-bbold
 Version:	1.01
-Release:	4
+Release:	5
 Summary:	Sans serif blackboard bold
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold
