@@ -5,9 +5,9 @@ Summary:	Sans serif blackboard bold
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.r17187.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.doc.r17187.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.source.r17187.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
