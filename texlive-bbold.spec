@@ -1,19 +1,13 @@
-# revision 17187
-# category Package
-# catalog-ctan /fonts/bbold
-# catalog-date 2010-02-15 23:28:51 +0100
-# catalog-license bsd
-# catalog-version 1.01
 Name:		texlive-bbold
-Version:	1.01
-Release:	11
+Version:	17187
+Release:	1
 Summary:	Sans serif blackboard bold
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold
 License:	BSD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.r17187.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.doc.r17187.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.source.r17187.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ than you could reasonably imagine. See the blackboard sampler
 for a feel for the font's appearance.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -75,25 +69,11 @@ for a feel for the font's appearance.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.01-2
-+ Revision: 749508
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.01-1
-+ Revision: 717891
-- texlive-bbold
-- texlive-bbold
-- texlive-bbold
-- texlive-bbold
-- texlive-bbold
-
