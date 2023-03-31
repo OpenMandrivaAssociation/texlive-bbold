@@ -1,6 +1,6 @@
 Name:		texlive-bbold
 Version:	17187
-Release:	1
+Release:	2
 Summary:	Sans serif blackboard bold
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold
