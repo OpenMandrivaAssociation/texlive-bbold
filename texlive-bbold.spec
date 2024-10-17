@@ -3,7 +3,7 @@ Version:	17187
 Release:	2
 Summary:	Sans serif blackboard bold
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/bbold
+URL:		https://www.ctan.org/tex-archive/fonts/bbold
 License:	BSD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold.doc.r%{version}.tar.xz
